@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="UserTestsSuite">
+    <listeners>
+        <listener class-name="api_implementations.utils.extentReport.ExtentReportManagerTestNG"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/Vladimir/IdeaProjects/RestAssuredProject/src/test/java/api_tests">
+        <classes>
+            <class name="api_tests.UserTests">
+                <methods>
+                    <include name="createUser"/>
+                    <include name="readUser"/>
+                    <include name="updateUser"/>
+                    <include name="loginUser"/>
+                    <include name="logoutUser"/>
+                    <include name="createListOfUsers"/>
+                    <include name="deleteUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
