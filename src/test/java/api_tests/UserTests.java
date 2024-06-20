@@ -3,10 +3,15 @@ package api_tests;
 import api_implementations.endpoints.UserEndpoints;
 import api_implementations.user_pojo.User;
 import api_implementations.utils.RequestResponseSpecifications;
+import api_implementations.utils.extentReport.ExtentReportManagerTestNG;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.github.javafaker.Faker;
 import io.restassured.response.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.ITestListener;
 import org.testng.annotations.*;
 
 import java.util.ArrayList;
@@ -15,41 +20,17 @@ import java.util.List;
 import static org.apache.http.HttpStatus.*;
 import static org.testng.Assert.*;
 
-public class UserTests {
+public class UserTests implements ITestListener {
 
     Faker fakeData;
+
     User userPojo;
+
     int numOfUsers = 10;
+
     List<User> userList = new ArrayList<>();
+
     private final Logger log = LogManager.getLogger(UserTests.class);
-
-    public final String testData = """
-            {
-              "id": 0,
-              "username": "string",
-              "firstName": "string",
-              "lastName": "string",
-              "email": "string",
-              "password": "string",
-              "phone": "string",
-              "userStatus": 0
-            }
-            """;
-
-    public final String testDataArray = """
-            [
-                {
-                  "id": 0,
-                  "username": "string",
-                  "firstName": "string",
-                  "lastName": "string",
-                  "email": "string",
-                  "password": "string",
-                  "phone": "string",
-                  "userStatus": 0
-                }
-            ]
-            """;
 
     @BeforeMethod
     public void setupData() {
@@ -64,59 +45,62 @@ public class UserTests {
         userPojo.setEmail(fakeData.internet().safeEmailAddress());
         userPojo.setPassword(fakeData.internet().password(5, 10));
         userPojo.setPhone(fakeData.phoneNumber().cellPhone());
+        log.debug("Starting a test...");
     }
 
     @Test(description = "Create a User")
     public void createUser() {
-        System.out.println("Create User:");
+        log.info("********** Creating User **********");
 
         Response response = UserEndpoints.createUser(userPojo);
         response.then().log().body();
 
         assertEquals(response.statusCode(), SC_OK);
+
+        log.info("********** User successfully created a User!!! **********");
     }
 
     @Test(description = "Get a user by username")
     public void readUser() {
-        System.out.println("Read User:");
-
-        //Create a User
+        log.info("********** Creating User **********");
         UserEndpoints.createUser(userPojo);
+        log.info("********** User is created **********");
 
-        //Read the created user
+        log.info("********** Reading the User **********");
         Response response = UserEndpoints.readUser(userPojo.getUsername());
         response.then().log().body();
 
         assertEquals(response.statusCode(), SC_OK, "Response code is not 200!!!");
+
+        log.info("********** Information about the user with the certain username is displayed!!! **********");
     }
 
     @Test(description = "Update a specific user")
     public void updateUser() {
-        System.out.println("Update User and then Read it again:");
-
-        //Create a User
+        log.info("********** Creating User **********");
         UserEndpoints.createUser(userPojo);
 
-        //Login a User
+        log.info("********** Logging the User **********");
         UserEndpoints.loginUser(userPojo.getUsername(), userPojo.getPassword());
 
         String previousPhoneNum = userPojo.getPhone();
-        //Update the specific user's phone number
+        log.info("********** Updating a specific User **********");
         userPojo.setPhone(fakeData.phoneNumber().cellPhone());
         Response response = UserEndpoints.updateUser(userPojo.getUsername(), userPojo);
         response.then().log().body();
 
         assertEquals(response.statusCode(), SC_OK, "Response code is not 200!!!");
         assertNotEquals(previousPhoneNum, userPojo.getPhone(), "Previously entered Phone Number is still the same!!!");
+        log.info("********** User has been updated successfully!!! **********");
 
-        // Read once again the user
+        log.info("********** Reading the User **********");
         Response responseAfterUpdate = UserEndpoints.readUser(userPojo.getUsername());
         responseAfterUpdate.then().log().body();
     }
 
     @Test(description = "Create a List of Users")
     public void createListOfUsers() {
-        System.out.println("Create list of users:");
+        log.info("********** Creating a List of Users **********");
         userPojo = new User();
 
         // Add a specific number of Users to a List
@@ -130,60 +114,64 @@ public class UserTests {
 
         assertEquals(response.statusCode(), SC_OK);
         assertEquals(response.jsonPath().get("message"), "ok", "The expected message is not ok!!!");
+
+        log.info("********** Successfully created a list of " + numOfUsers + " Users **********");
     }
 
     @Test(description = "Login a user to the website")
     public void loginUser() {
-        System.out.println("Login User:");
-
-        //Create a User
+        log.info("********** Creating User **********");
         UserEndpoints.createUser(userPojo);
 
-        // Login the User
+        log.info("********** Login User **********");
         Response response = UserEndpoints.loginUser(userPojo.getUsername(), userPojo.getPassword());
         response.then().log().body();
 
-        // Check the status code and check for an "ok" message
         String message = response.jsonPath().get("message");
         assertEquals(response.statusCode(), SC_OK, "The expected response code is not 200 for the Login User test!!!");
         assertTrue(message.contains("logged in user session"), "The message doesn't contain logged in user session!!!");
+        log.info("********** User successfully logged in!!! **********");
     }
 
     @Test(description = "Logout a user from his account")
     public void logoutUser() {
-        System.out.println("Logout User:");
-
-        //Create a User
+        log.info("********** Creating User **********");
         UserEndpoints.createUser(userPojo);
 
-        //Login a User
+        log.info("********** Logging User **********");
+
         UserEndpoints.loginUser(userPojo.getUsername(), userPojo.getPassword());
 
-        //Logout from the account
+        log.info("********** Logging out User **********");
         Response response = UserEndpoints.logoutUser();
         response.then().log().body().extract().response();
 
+        // Print logs in Extent Report
+        //test.log(Status.INFO, response.prettyPrint());
         assertEquals(response.statusCode(), SC_OK, "The expected response code is not 200 for the Logout User test!!!");
         assertEquals(response.jsonPath().get("message"), "ok", "The expected message is not ok!!!");
+        log.info("********** User successfully logged out!!! **********");
     }
 
     @Test(description = "Delete a user by providing his username")
     public void deleteUser() {
-        System.out.println("Delete User:");
-
-        //Create a User
+        log.info("********** Creating User **********");
         UserEndpoints.createUser(userPojo);
 
-        //Login a User
+        log.info("********** Login User **********");
         UserEndpoints.loginUser(userPojo.getUsername(), userPojo.getPassword());
 
-        //Delete the User
+        log.info("********** Delete User **********");
         Response response = UserEndpoints.deleteUser(userPojo.getUsername());
         response.then().log().body().extract().response();
 
-        String message = response.jsonPath().get("message");
+        // Print logs in Extent Report
+        //        getTest().log(Status.INFO, response.prettyPrint());
 
+        String message = response.jsonPath().get("message");
         assertEquals(response.statusCode(), SC_OK, "The expected response code is not 200 for the Delete User test!!!");
         assertEquals(message, userPojo.getUsername(), "The message doesn't match user's username!!!");
+
+        log.info("********** User deleted successfully!!! **********");
     }
 }

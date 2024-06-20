@@ -21,10 +21,9 @@ public class ExtentReportManagerTestNG implements ITestListener {
     public void onStart(ITestContext testContext) {
 
         String timestamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
-        repName = "Test-Report-" + timestamp + ".html";
+        repName = "Test-Report-API-Tests" + timestamp + ".html";
 
         sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);
-
         sparkReporter.config().setDocumentTitle("RestAssuredProject");
         sparkReporter.config().setReportName("RestAssured Automation Project Test Report");
         sparkReporter.config().setTheme(Theme.DARK);

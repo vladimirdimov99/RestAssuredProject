@@ -1,0 +1,153 @@
+2024-06-20 10:54:48.642 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\vld\IdeaProjects\RestAssuredProject\testng.xml"
+2024-06-20 10:54:48.742 [main] INFO  org.testng.internal.Utils - [TestRunner] Running the tests in 'C:/Users/Vladimir/IdeaProjects/RestAssuredProject/src/test/java/api_tests' with parallel mode:none
+2024-06-20 10:54:48.745 [main] INFO  org.testng.internal.Utils - [RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@554e218 priority: 10
+2024-06-20 10:54:48.767 [main] INFO  org.testng.internal.Utils - [TestClass] Creating TestClass for [ClassImpl class=api_tests.UserTests]
+2024-06-20 10:54:48.774 [main] INFO  org.testng.internal.Utils - [TestClass] Adding method UserTests.loginUser()[pri:0, instance:null] on TestClass class api_tests.UserTests
+2024-06-20 10:54:48.775 [main] INFO  org.testng.internal.Utils - [TestClass] Adding method UserTests.logoutUser()[pri:0, instance:null] on TestClass class api_tests.UserTests
+2024-06-20 10:54:48.775 [main] INFO  org.testng.internal.Utils - [TestClass] Adding method UserTests.deleteUser()[pri:0, instance:null] on TestClass class api_tests.UserTests
+2024-06-20 10:54:48.776 [main] INFO  org.testng.internal.Utils - [TestClass] Adding method UserTests.createListOfUsers()[pri:0, instance:null] on TestClass class api_tests.UserTests
+2024-06-20 10:54:48.776 [main] INFO  org.testng.internal.Utils - [TestClass] Adding method UserTests.updateUser()[pri:0, instance:null] on TestClass class api_tests.UserTests
+2024-06-20 10:54:48.777 [main] INFO  org.testng.internal.Utils - [TestClass] Adding method UserTests.createUser()[pri:0, instance:null] on TestClass class api_tests.UserTests
+2024-06-20 10:54:48.778 [main] INFO  org.testng.internal.Utils - [TestClass] Adding method UserTests.readUser()[pri:0, instance:null] on TestClass class api_tests.UserTests
+2024-06-20 10:54:48.786 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-06-20 10:54:48.788 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-06-20 10:54:48.789 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-06-20 10:54:48.789 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-06-20 10:54:48.790 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-06-20 10:54:48.790 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-06-20 10:54:48.790 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-06-20 10:54:48.791 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-06-20 10:54:48.791 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-06-20 10:54:48.791 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-06-20 10:54:48.792 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-06-20 10:54:48.792 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-06-20 10:54:48.793 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-06-20 10:54:48.793 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-06-20 10:54:48.793 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-06-20 10:54:48.793 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-06-20 10:54:48.797 [main] INFO  org.testng.internal.Utils - [XmlMethodSelector] Including method api_tests.setupData()
+2024-06-20 10:54:48.798 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+2024-06-20 10:54:48.804 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 5 ms.
+2024-06-20 10:54:48.805 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-06-20 10:54:48.805 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-06-20 10:54:48.807 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-06-20 10:54:48.809 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-06-20 10:54:48.809 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-06-20 10:54:48.809 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-06-20 10:54:48.810 [main] INFO  org.testng.internal.Utils - [XmlMethodSelector] Including method api_tests.loginUser()
+2024-06-20 10:54:48.811 [main] INFO  org.testng.internal.Utils - [XmlMethodSelector] Including method api_tests.logoutUser()
+2024-06-20 10:54:48.811 [main] INFO  org.testng.internal.Utils - [XmlMethodSelector] Including method api_tests.deleteUser()
+2024-06-20 10:54:48.812 [main] INFO  org.testng.internal.Utils - [XmlMethodSelector] Including method api_tests.createListOfUsers()
+2024-06-20 10:54:48.812 [main] INFO  org.testng.internal.Utils - [XmlMethodSelector] Including method api_tests.updateUser()
+2024-06-20 10:54:48.812 [main] INFO  org.testng.internal.Utils - [XmlMethodSelector] Including method api_tests.createUser()
+2024-06-20 10:54:48.812 [main] INFO  org.testng.internal.Utils - [XmlMethodSelector] Including method api_tests.readUser()
+2024-06-20 10:54:48.813 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+2024-06-20 10:54:48.817 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 4 ms.
+2024-06-20 10:54:48.819 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-06-20 10:54:48.819 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-06-20 10:54:48.819 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2024-06-20 10:54:48.820 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2024-06-20 10:54:48.826 [main] INFO  org.testng.internal.Utils - [SuiteRunner] Created 1 TestRunners
+2024-06-20 10:54:48.828 [main] INFO  org.testng.internal.Utils - [TestRunner] Running test C:/Users/Vladimir/IdeaProjects/RestAssuredProject/src/test/java/api_tests on 1  classes,  included groups:[] excluded groups:[]
+2024-06-20 10:54:48.829 [main] INFO  org.testng.TestClass - ===== Test class
+api_tests.UserTests
+2024-06-20 10:54:48.829 [main] INFO  org.testng.TestClass -   @BeforeMethod UserTests.setupData()[pri:0, instance:api_tests.UserTests@126945f9]
+2024-06-20 10:54:48.829 [main] INFO  org.testng.TestClass -     @Test UserTests.loginUser()[pri:0, instance:api_tests.UserTests@126945f9]
+2024-06-20 10:54:48.829 [main] INFO  org.testng.TestClass -     @Test UserTests.logoutUser()[pri:0, instance:api_tests.UserTests@126945f9]
+2024-06-20 10:54:48.829 [main] INFO  org.testng.TestClass -     @Test UserTests.deleteUser()[pri:0, instance:api_tests.UserTests@126945f9]
+2024-06-20 10:54:48.829 [main] INFO  org.testng.TestClass -     @Test UserTests.createListOfUsers()[pri:0, instance:api_tests.UserTests@126945f9]
+2024-06-20 10:54:48.830 [main] INFO  org.testng.TestClass -     @Test UserTests.updateUser()[pri:0, instance:api_tests.UserTests@126945f9]
+2024-06-20 10:54:48.830 [main] INFO  org.testng.TestClass -     @Test UserTests.createUser()[pri:0, instance:api_tests.UserTests@126945f9]
+2024-06-20 10:54:48.830 [main] INFO  org.testng.TestClass -     @Test UserTests.readUser()[pri:0, instance:api_tests.UserTests@126945f9]
+2024-06-20 10:54:48.830 [main] INFO  org.testng.TestClass - ======
+2024-06-20 10:54:48.974 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 2 ms.
+2024-06-20 10:54:48.981 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] No configuration methods found
+2024-06-20 10:54:48.982 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Keeping method UserTests.setupData()[pri:0, instance:api_tests.UserTests@126945f9] for class [TestClass name=class api_tests.UserTests]
+2024-06-20 10:54:48.991 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Keeping method UserTests.setupData()[pri:0, instance:api_tests.UserTests@126945f9] for class [TestClass name=class api_tests.UserTests]
+2024-06-20 10:54:48.993 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Invoking @BeforeMethod UserTests.setupData()[pri:0, instance:api_tests.UserTests@126945f9]
+2024-06-20 10:54:49.538 [main] DEBUG api_tests.UserTests - Starting a test...
+2024-06-20 10:54:49.546 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Invoking api_tests.UserTests.createUser
+2024-06-20 10:54:49.546 [main] INFO  api_tests.UserTests - ********** Creating User **********
+2024-06-20 10:54:51.548 [main] INFO  api_tests.UserTests - ********** User successfully created a User!!! **********
+2024-06-20 10:54:51.556 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] No configuration methods found
+2024-06-20 10:54:51.556 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Keeping method UserTests.setupData()[pri:0, instance:api_tests.UserTests@126945f9] for class [TestClass name=class api_tests.UserTests]
+2024-06-20 10:54:51.557 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Keeping method UserTests.setupData()[pri:0, instance:api_tests.UserTests@126945f9] for class [TestClass name=class api_tests.UserTests]
+2024-06-20 10:54:51.557 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Invoking @BeforeMethod UserTests.setupData()[pri:0, instance:api_tests.UserTests@126945f9]
+2024-06-20 10:54:51.600 [main] DEBUG api_tests.UserTests - Starting a test...
+2024-06-20 10:54:51.602 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Invoking api_tests.UserTests.readUser
+2024-06-20 10:54:51.603 [main] INFO  api_tests.UserTests - ********** Creating User **********
+2024-06-20 10:54:52.629 [main] INFO  api_tests.UserTests - ********** User is created **********
+2024-06-20 10:54:52.630 [main] INFO  api_tests.UserTests - ********** Reading the User **********
+2024-06-20 10:54:53.492 [main] INFO  api_tests.UserTests - ********** Information about the user with the certain username is displayed!!! **********
+2024-06-20 10:54:53.495 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] No configuration methods found
+2024-06-20 10:54:53.496 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Keeping method UserTests.setupData()[pri:0, instance:api_tests.UserTests@126945f9] for class [TestClass name=class api_tests.UserTests]
+2024-06-20 10:54:53.498 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Keeping method UserTests.setupData()[pri:0, instance:api_tests.UserTests@126945f9] for class [TestClass name=class api_tests.UserTests]
+2024-06-20 10:54:53.499 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Invoking @BeforeMethod UserTests.setupData()[pri:0, instance:api_tests.UserTests@126945f9]
+2024-06-20 10:54:53.525 [main] DEBUG api_tests.UserTests - Starting a test...
+2024-06-20 10:54:53.526 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Invoking api_tests.UserTests.updateUser
+2024-06-20 10:54:53.527 [main] INFO  api_tests.UserTests - ********** Creating User **********
+2024-06-20 10:54:54.430 [main] INFO  api_tests.UserTests - ********** Logging the User **********
+2024-06-20 10:54:55.190 [main] INFO  api_tests.UserTests - ********** Updating a specific User **********
+2024-06-20 10:54:56.220 [main] INFO  api_tests.UserTests - ********** User has been updated successfully!!! **********
+2024-06-20 10:54:56.221 [main] INFO  api_tests.UserTests - ********** Reading the User **********
+2024-06-20 10:54:57.163 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] No configuration methods found
+2024-06-20 10:54:57.164 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Keeping method UserTests.setupData()[pri:0, instance:api_tests.UserTests@126945f9] for class [TestClass name=class api_tests.UserTests]
+2024-06-20 10:54:57.166 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Keeping method UserTests.setupData()[pri:0, instance:api_tests.UserTests@126945f9] for class [TestClass name=class api_tests.UserTests]
+2024-06-20 10:54:57.166 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Invoking @BeforeMethod UserTests.setupData()[pri:0, instance:api_tests.UserTests@126945f9]
+2024-06-20 10:54:57.184 [main] DEBUG api_tests.UserTests - Starting a test...
+2024-06-20 10:54:57.185 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Invoking api_tests.UserTests.loginUser
+2024-06-20 10:54:57.185 [main] INFO  api_tests.UserTests - ********** Creating User **********
+2024-06-20 10:54:58.161 [main] INFO  api_tests.UserTests - ********** Login User **********
+2024-06-20 10:54:59.464 [main] INFO  api_tests.UserTests - ********** User successfully logged in!!! **********
+2024-06-20 10:54:59.464 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] No configuration methods found
+2024-06-20 10:54:59.465 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Keeping method UserTests.setupData()[pri:0, instance:api_tests.UserTests@126945f9] for class [TestClass name=class api_tests.UserTests]
+2024-06-20 10:54:59.465 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Keeping method UserTests.setupData()[pri:0, instance:api_tests.UserTests@126945f9] for class [TestClass name=class api_tests.UserTests]
+2024-06-20 10:54:59.465 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Invoking @BeforeMethod UserTests.setupData()[pri:0, instance:api_tests.UserTests@126945f9]
+2024-06-20 10:54:59.484 [main] DEBUG api_tests.UserTests - Starting a test...
+2024-06-20 10:54:59.485 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Invoking api_tests.UserTests.logoutUser
+2024-06-20 10:54:59.485 [main] INFO  api_tests.UserTests - ********** Creating User **********
+2024-06-20 10:55:00.422 [main] INFO  api_tests.UserTests - ********** Logging User **********
+2024-06-20 10:55:01.372 [main] INFO  api_tests.UserTests - ********** Logging out User **********
+2024-06-20 10:55:02.254 [main] INFO  api_tests.UserTests - ********** User successfully logged out!!! **********
+2024-06-20 10:55:02.255 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] No configuration methods found
+2024-06-20 10:55:02.257 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Keeping method UserTests.setupData()[pri:0, instance:api_tests.UserTests@126945f9] for class [TestClass name=class api_tests.UserTests]
+2024-06-20 10:55:02.258 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Keeping method UserTests.setupData()[pri:0, instance:api_tests.UserTests@126945f9] for class [TestClass name=class api_tests.UserTests]
+2024-06-20 10:55:02.259 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Invoking @BeforeMethod UserTests.setupData()[pri:0, instance:api_tests.UserTests@126945f9]
+2024-06-20 10:55:02.270 [main] DEBUG api_tests.UserTests - Starting a test...
+2024-06-20 10:55:02.270 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Invoking api_tests.UserTests.createListOfUsers
+2024-06-20 10:55:02.271 [main] INFO  api_tests.UserTests - ********** Creating a List of Users **********
+2024-06-20 10:55:02.287 [main] DEBUG api_tests.UserTests - Starting a test...
+2024-06-20 10:55:02.308 [main] DEBUG api_tests.UserTests - Starting a test...
+2024-06-20 10:55:02.318 [main] DEBUG api_tests.UserTests - Starting a test...
+2024-06-20 10:55:02.326 [main] DEBUG api_tests.UserTests - Starting a test...
+2024-06-20 10:55:02.337 [main] DEBUG api_tests.UserTests - Starting a test...
+2024-06-20 10:55:02.346 [main] DEBUG api_tests.UserTests - Starting a test...
+2024-06-20 10:55:02.355 [main] DEBUG api_tests.UserTests - Starting a test...
+2024-06-20 10:55:02.366 [main] DEBUG api_tests.UserTests - Starting a test...
+2024-06-20 10:55:02.375 [main] DEBUG api_tests.UserTests - Starting a test...
+2024-06-20 10:55:02.383 [main] DEBUG api_tests.UserTests - Starting a test...
+2024-06-20 10:55:03.383 [main] INFO  api_tests.UserTests - ********** Successfully created a list of 10 Users **********
+2024-06-20 10:55:03.385 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] No configuration methods found
+2024-06-20 10:55:03.385 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Keeping method UserTests.setupData()[pri:0, instance:api_tests.UserTests@126945f9] for class [TestClass name=class api_tests.UserTests]
+2024-06-20 10:55:03.386 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Keeping method UserTests.setupData()[pri:0, instance:api_tests.UserTests@126945f9] for class [TestClass name=class api_tests.UserTests]
+2024-06-20 10:55:03.386 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Invoking @BeforeMethod UserTests.setupData()[pri:0, instance:api_tests.UserTests@126945f9]
+2024-06-20 10:55:03.396 [main] DEBUG api_tests.UserTests - Starting a test...
+2024-06-20 10:55:03.396 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] Invoking api_tests.UserTests.deleteUser
+2024-06-20 10:55:03.396 [main] INFO  api_tests.UserTests - ********** Creating User **********
+2024-06-20 10:55:04.203 [main] INFO  api_tests.UserTests - ********** Login User **********
+2024-06-20 10:55:05.124 [main] INFO  api_tests.UserTests - ********** Delete User **********
+2024-06-20 10:55:06.160 [main] INFO  api_tests.UserTests - ********** User deleted successfully!!! **********
+2024-06-20 10:55:06.161 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] No configuration methods found
+2024-06-20 10:55:06.162 [main] INFO  org.testng.internal.Utils - [Invoker 1554547125] No configuration methods found
+2024-06-20 10:55:06.390 [main] INFO  org.testng.internal.Utils - [[Utils]] Attempting to create C:\Users\vld\IdeaProjects\RestAssuredProject\target\surefire-reports\UserTestsSuite\C__Users_Vladimir_IdeaProjects_RestAssuredProject_src_test_java_api_tests.xml
+2024-06-20 10:55:06.391 [main] INFO  org.testng.internal.Utils - [[Utils]]   Directory C:\Users\vld\IdeaProjects\RestAssuredProject\target\surefire-reports\UserTestsSuite exists: true
+2024-06-20 10:55:06.392 [main] INFO  org.testng.internal.Utils - Creating C:\Users\vld\IdeaProjects\RestAssuredProject\target\surefire-reports\UserTestsSuite\C__Users_Vladimir_IdeaProjects_RestAssuredProject_src_test_java_api_tests.xml
+2024-06-20 10:55:06.450 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@24b85a27: 52 ms
+2024-06-20 10:55:06.451 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@d69b30b: 0 ms
+2024-06-20 10:55:06.460 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@4cb79101: 9 ms
+2024-06-20 10:55:06.465 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@443f0e8a: 4 ms
+2024-06-20 10:55:06.468 [main] INFO  org.testng.internal.Utils - [[Utils]] Attempting to create C:\Users\vld\IdeaProjects\RestAssuredProject\target\surefire-reports\junitreports\TEST-api_tests.UserTests.xml
+2024-06-20 10:55:06.468 [main] INFO  org.testng.internal.Utils - [[Utils]]   Directory C:\Users\vld\IdeaProjects\RestAssuredProject\target\surefire-reports\junitreports exists: true
+2024-06-20 10:55:06.469 [main] INFO  org.testng.internal.Utils - Creating C:\Users\vld\IdeaProjects\RestAssuredProject\target\surefire-reports\junitreports\TEST-api_tests.UserTests.xml
+2024-06-20 10:55:06.469 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@3157be19: 4 ms
+2024-06-20 10:55:06.469 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@37b2cf67: 0 ms

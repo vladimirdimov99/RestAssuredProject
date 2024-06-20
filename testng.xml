@@ -4,7 +4,7 @@
     <listeners>
         <listener class-name="api_implementations.utils.extentReport.ExtentReportManagerTestNG"></listener>
     </listeners>
-    <test verbose="2" preserve-order="true"
+    <test verbose="10" preserve-order="true"
           name="C:/Users/Vladimir/IdeaProjects/RestAssuredProject/src/test/java/api_tests">
         <classes>
             <class name="api_tests.UserTests">
